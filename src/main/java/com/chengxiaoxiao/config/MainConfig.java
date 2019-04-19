@@ -2,6 +2,7 @@ package com.chengxiaoxiao.config;
 
 import com.chengxiaoxiao.bean.Person;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -11,8 +12,8 @@ import org.springframework.context.annotation.Configuration;
  * @Date: 2019-04-19
  */
 @Configuration
+@ComponentScan(value="com.chengxiaoxiao")
 public class MainConfig {
-
     @Bean
     public Person person() {
         return new Person(18, "做全栈攻城狮");
