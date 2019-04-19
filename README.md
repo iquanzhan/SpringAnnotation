@@ -21,3 +21,20 @@ public class MainConfig {
 ```
 @ComponentScan(value="com.chengxiaoxiao")
 ```
+
+默认情况下会把采用@Controller、@Service、@Repository、@Component的类自动加载到spring容器中
+
+### 3.引入junit
+
+```
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+    <scope>test</scope>
+</dependency>
+```
+
+方法上添加@Test注解
+
+4.
